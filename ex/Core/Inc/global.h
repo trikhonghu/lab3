@@ -20,8 +20,11 @@
 #define COUNT_YELLOW	200
 
 extern int status;
+extern int key_sw;
 extern int count_red;
 extern const uint8_t led7_seg_buffer[10];
 extern uint8_t led_buffer[4];
+extern uint8_t count_led1;
+extern uint8_t count_led2;
 
 #endif /* INC_GLOBAL_H_ */

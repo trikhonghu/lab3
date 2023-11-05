@@ -8,9 +8,9 @@
 #ifndef INC_SOFTWARETIMER_H_
 #define INC_SOFTWARETIMER_H_
 
-extern int flag;
+extern int flag[2];
 
-void setTimer(int duration);
+void setTimer(int index, int duration);
 void timerRun();
 
 #endif /* INC_SOFTWARETIMER_H_ */

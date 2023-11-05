@@ -7,19 +7,23 @@
 
 #include "softwareTimer.h"
 
-int counter = 0;
-int flag = 0;
+int counter[2] = {0};
+int flag[2] = {0};
 
-void setTimer(int duration){
-		counter = duration;
-		flag = 0;
+void setTimer(int index ,int duration){
+	if(index < 2){
+		counter[index] = duration;
+		flag[index] = 0;
+	}
 }
 
 void timerRun(void){
-	if(counter > 0){
-		counter--;
-		if(counter <= 0){
-			flag = 1;
+	for(int i =0; i<10; i++){
+		if(counter[i] > 0){
+			counter[i]--;
+			if(counter[i] <= 0){
+			flag[i] = 1;
+			}
 		}
 	}
 }

@@ -22,6 +22,7 @@
 #include "global.h"
 #include "fsm_automatic.h"
 #include "led_7_seg.h"
+#include "input_processing.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -105,9 +106,12 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  //fsm_for_input_processing();
-	  fsm_automatic_run();
-	  display7segLed(led7_seg_buffer[led_buffer[1]]);
+	fsm_for_input_processing();
+	count_led1++;
+	count_led2++;
+	fsm_automatic_run();
+	//display7segLed(led7_seg_buffer[led_buffer[2]]);
+	scan_led();
   }
   /* USER CODE END 3 */
 }
