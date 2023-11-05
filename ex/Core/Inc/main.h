@@ -58,6 +58,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define a_Pin GPIO_PIN_0
+#define a_GPIO_Port GPIOA
+#define b_Pin GPIO_PIN_1
+#define b_GPIO_Port GPIOA
 #define LED_RED1_Pin GPIO_PIN_2
 #define LED_RED1_GPIO_Port GPIOA
 #define LED_YELLOW1_Pin GPIO_PIN_3
@@ -72,6 +76,28 @@ void Error_Handler(void);
 #define LED_GREEN_GPIO_Port GPIOA
 #define BUTTON_1_Pin GPIO_PIN_0
 #define BUTTON_1_GPIO_Port GPIOB
+#define BUTTON_2_Pin GPIO_PIN_1
+#define BUTTON_2_GPIO_Port GPIOB
+#define BUTTON_3_Pin GPIO_PIN_2
+#define BUTTON_3_GPIO_Port GPIOB
+#define d_Pin GPIO_PIN_8
+#define d_GPIO_Port GPIOA
+#define e_Pin GPIO_PIN_9
+#define e_GPIO_Port GPIOA
+#define f_Pin GPIO_PIN_10
+#define f_GPIO_Port GPIOA
+#define g_Pin GPIO_PIN_11
+#define g_GPIO_Port GPIOA
+#define c_Pin GPIO_PIN_12
+#define c_GPIO_Port GPIOA
+#define SW1_Pin GPIO_PIN_3
+#define SW1_GPIO_Port GPIOB
+#define SW2_Pin GPIO_PIN_4
+#define SW2_GPIO_Port GPIOB
+#define SW3_Pin GPIO_PIN_5
+#define SW3_GPIO_Port GPIOB
+#define SW4_Pin GPIO_PIN_6
+#define SW4_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

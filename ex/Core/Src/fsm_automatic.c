@@ -6,6 +6,17 @@
  */
 #include "fsm_automatic.h"
 #include "global.h"
+/*-----------------------------------------------------------------
+ INIT				1
+ AUTO_RED_GREEN		2
+ AUTO_RED_YELLOW	3
+ AUTO_GREEN_RED		4
+ AUTO_YELLOW_RED	5
+
+ The yellow light is initialized for a fixed period of 2 seconds
+
+ ------------------------------------------------------------------*/
+
 
 void fsm_automatic_run(void){
 	switch (status) {
@@ -15,38 +26,68 @@ void fsm_automatic_run(void){
 			HAL_GPIO_WritePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin, SET);
 			HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, SET);
 
-			status = AUTO_RED;
+			HAL_GPIO_WritePin(LED_RED1_GPIO_Port, LED_RED1_Pin, SET);
+			HAL_GPIO_WritePin(LED_YELLOW1_GPIO_Port, LED_YELLOW1_Pin, SET);
+			HAL_GPIO_WritePin(LED_GREEN1_GPIO_Port, LED_GREEN1_Pin, SET);
+
+			status = AUTO_RED_GREEN;
 			//counter[1]
-			setTimer(500);
+			setTimer((count_red*100)-COUNT_YELLOW);
 			break;
-		case AUTO_RED:
+		case AUTO_RED_GREEN:
 			HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, RESET);
 			HAL_GPIO_WritePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin, SET);
 			HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, SET);
 
-			if(flag == 1){
-				status = AUTO_GREEN;
-				setTimer(300);
-			}
-			break;
-		case AUTO_YELLOW:
-			HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, SET);
-			HAL_GPIO_WritePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin, RESET);
-			HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, SET);
+			HAL_GPIO_WritePin(LED_RED1_GPIO_Port, LED_RED1_Pin, SET);
+			HAL_GPIO_WritePin(LED_YELLOW1_GPIO_Port, LED_YELLOW1_Pin, SET);
+			HAL_GPIO_WritePin(LED_GREEN1_GPIO_Port, LED_GREEN1_Pin, RESET);
 
 			if(flag == 1){
-				status = AUTO_RED;
-				setTimer(500);
+				status = AUTO_RED_YELLOW;
+				setTimer(200);
 			}
 			break;
-		case AUTO_GREEN:
+		case AUTO_RED_YELLOW:
+			HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, RESET);
+			HAL_GPIO_WritePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin, SET);
+			HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, SET);
+
+			HAL_GPIO_WritePin(LED_RED1_GPIO_Port, LED_RED1_Pin, SET);
+			HAL_GPIO_WritePin(LED_YELLOW1_GPIO_Port, LED_YELLOW1_Pin, RESET);
+			HAL_GPIO_WritePin(LED_GREEN1_GPIO_Port, LED_GREEN1_Pin, SET);
+
+			if(flag == 1){
+				status = AUTO_GREEN_RED;
+				setTimer((count_red*100)-COUNT_YELLOW);
+			}
+			break;
+		case AUTO_GREEN_RED:
 			HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, SET);
 			HAL_GPIO_WritePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin, SET);
 			HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, RESET);
 
+			HAL_GPIO_WritePin(LED_RED1_GPIO_Port, LED_RED1_Pin, RESET);
+			HAL_GPIO_WritePin(LED_YELLOW1_GPIO_Port, LED_YELLOW1_Pin, SET);
+			HAL_GPIO_WritePin(LED_GREEN1_GPIO_Port, LED_GREEN1_Pin, SET);
+
 			if(flag == 1){
-				status = AUTO_YELLOW;
+				status = AUTO_YELLOW_RED;
 				setTimer(200);
+			}
+			break;
+		case AUTO_YELLOW_RED:
+			HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, SET);
+			HAL_GPIO_WritePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin, RESET);
+			HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, SET);
+
+			HAL_GPIO_WritePin(LED_RED1_GPIO_Port, LED_RED1_Pin, RESET);
+			HAL_GPIO_WritePin(LED_YELLOW1_GPIO_Port, LED_YELLOW1_Pin, SET);
+			HAL_GPIO_WritePin(LED_GREEN1_GPIO_Port, LED_GREEN1_Pin, SET);
+
+			if(flag == 1){
+				status = AUTO_RED_GREEN;
+				setTimer((count_red*100)-COUNT_YELLOW);
 			}
 			break;
 		default:
