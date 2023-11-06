@@ -17,14 +17,20 @@
 #define AUTO_RED_YELLOW	3
 #define AUTO_GREEN_RED	4
 #define AUTO_YELLOW_RED	5
-#define COUNT_YELLOW	200
 
-extern int status;
-extern int key_sw;
-extern int count_red;
-extern const uint8_t led7_seg_buffer[10];
-extern uint8_t led_buffer[4];
-extern uint8_t count_led1;
-extern uint8_t count_led2;
+extern uint8_t			mode;
+
+extern uint8_t 			status;
+extern uint8_t 			key_sw;
+
+extern uint8_t 			count_red;
+extern uint8_t			count_yellow;
+extern uint8_t			count_green;
+
+extern const uint8_t 	led7_seg_buffer[10];
+extern uint8_t 			led_buffer[4];
+
+extern uint8_t 			count_led1;
+extern uint8_t 			count_led2;
 
 #endif /* INC_GLOBAL_H_ */

@@ -6,9 +6,10 @@
  */
 
 #include "softwareTimer.h"
+#include "global.h"
 
-int counter[2] = {0};
-int flag[2] = {0};
+int counter[4] = {0};
+int flag[4] = {0};
 
 void setTimer(int index ,int duration){
 	if(index < 2){
@@ -18,7 +19,7 @@ void setTimer(int index ,int duration){
 }
 
 void timerRun(void){
-	for(int i =0; i<10; i++){
+	for(int i =0; i<3; i++){
 		if(counter[i] > 0){
 			counter[i]--;
 			if(counter[i] <= 0){

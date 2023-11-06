@@ -6,6 +6,7 @@
  */
 #include "fsm_automatic.h"
 #include "global.h"
+#include "softwareTimer.h"
 /*-----------------------------------------------------------------
  INIT				1
  AUTO_RED_GREEN		2
@@ -19,8 +20,7 @@
 
 
 void fsm_automatic_run(void){
-	//count_led1++;
-	//count_led2++;
+	//flag[2]:ledTraffic1, flag[3]:ledTraffic2
 	switch (status) {
 		case INIT:
 			//TO DO
@@ -32,24 +32,19 @@ void fsm_automatic_run(void){
 			HAL_GPIO_WritePin(LED_YELLOW1_GPIO_Port, LED_YELLOW1_Pin, SET);
 			HAL_GPIO_WritePin(LED_GREEN1_GPIO_Port, LED_GREEN1_Pin, SET);
 
+			if(mode == 1){
+				led_buffer[0]=0;
+				led_buffer[1]=0;
+
+				led_buffer[2] =0;
+				led_buffer[3] =0;
+			}
+
 			status = AUTO_RED_GREEN;
 			//counter[1]
-			setTimer(0, (count_red*100)-COUNT_YELLOW);
+			setTimer(0, count_green*100);
 			break;
 		case AUTO_RED_GREEN:
-			if(count_led1 % 100 == 0){
-				led_buffer[0]=(count_red*100-count_led1)/1000;
-				led_buffer[1]=(count_red*100-count_led1)%1000;
-			}
-
-			if(count_led2 % 100 == 0){
-				led_buffer[2] = (count_red*100 - COUNT_YELLOW - count_led2)/1000;
-				led_buffer[3] = (count_red*100 - COUNT_YELLOW - count_led2)%1000;
-			}
-
-			if(count_led2 == count_red*100 - COUNT_YELLOW)
-				count_led2 = 0;
-
 			HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, RESET);
 			HAL_GPIO_WritePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin, SET);
 			HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, SET);
@@ -58,29 +53,20 @@ void fsm_automatic_run(void){
 			HAL_GPIO_WritePin(LED_YELLOW1_GPIO_Port, LED_YELLOW1_Pin, SET);
 			HAL_GPIO_WritePin(LED_GREEN1_GPIO_Port, LED_GREEN1_Pin, RESET);
 
+			if(mode == 1){
+				led_buffer[0] = (count_yellow*100 + counter[0])/1000;
+				led_buffer[1] = ((count_yellow*100 + counter[0])/100)%10;
+
+				led_buffer[2] = (counter[0])/1000;
+				led_buffer[3] = ((counter[0])/100)%10;
+			}
+
 			if(flag[0] == 1){
 				status = AUTO_RED_YELLOW;
-				setTimer(0, 200);
+				setTimer(0, count_yellow*100);
 			}
 			break;
 		case AUTO_RED_YELLOW:
-			if(count_led1 % 100 == 0){
-				led_buffer[0]=(count_red*100-count_led1)/1000;
-				led_buffer[1]=(count_red*100-count_led1)%1000;
-			}
-
-			if(count_led1 == count_red){
-				count_led1 = 0;
-			}
-
-			if(count_led2 % 100 == 0){
-				led_buffer[2] = (COUNT_YELLOW - count_led2)/1000;
-				led_buffer[3] = (COUNT_YELLOW - count_led2)%1000;
-			}
-
-			if(count_led2 == COUNT_YELLOW)
-				count_led2 = 0;
-
 			HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, RESET);
 			HAL_GPIO_WritePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin, SET);
 			HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, SET);
@@ -89,25 +75,20 @@ void fsm_automatic_run(void){
 			HAL_GPIO_WritePin(LED_YELLOW1_GPIO_Port, LED_YELLOW1_Pin, RESET);
 			HAL_GPIO_WritePin(LED_GREEN1_GPIO_Port, LED_GREEN1_Pin, SET);
 
+			if(mode == 1){
+				led_buffer[0] = (counter[0])/1000;
+				led_buffer[1] = ((counter[0])/100)%10;
+
+				led_buffer[2] = (counter[0])/1000;
+				led_buffer[3] = ((counter[0])/100)%10;
+			}
+
 			if(flag[0] == 1){
 				status = AUTO_GREEN_RED;
-				setTimer(0, (count_red*100)-COUNT_YELLOW);
+				setTimer(0, count_green*100);
 			}
 			break;
 		case AUTO_GREEN_RED:
-			if(count_led2 % 100 == 0){
-				led_buffer[2]=(count_red*100-count_led2)/1000;
-				led_buffer[3]=(count_red*100-count_led2)%1000;
-			}
-
-			if(count_led1 % 100 == 0){
-				led_buffer[0] = (count_red*100 - COUNT_YELLOW - count_led2)/1000;
-				led_buffer[1] = (count_red*100 - COUNT_YELLOW - count_led2)%1000;
-			}
-
-			if(count_led1 == count_red*100 - COUNT_YELLOW)
-				count_led1 = 0;
-
 			HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, SET);
 			HAL_GPIO_WritePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin, SET);
 			HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, RESET);
@@ -116,25 +97,21 @@ void fsm_automatic_run(void){
 			HAL_GPIO_WritePin(LED_YELLOW1_GPIO_Port, LED_YELLOW1_Pin, SET);
 			HAL_GPIO_WritePin(LED_GREEN1_GPIO_Port, LED_GREEN1_Pin, SET);
 
+			if(mode == 1){
+				led_buffer[0] = (counter[0])/1000;
+				led_buffer[1] = ((counter[0])/100)%10;
+
+				led_buffer[2] = (count_yellow*100 + counter[0])/1000;
+				led_buffer[3] = ((count_yellow*100 + counter[0])/100)%10;
+			}
+
 			if(flag[0] == 1){
 				status = AUTO_YELLOW_RED;
-				setTimer(0, 200);
+				setTimer(0, count_yellow * 100);
 			}
+
 			break;
 		case AUTO_YELLOW_RED:
-			if(count_led2 % 100 == 0){
-				led_buffer[2]=(count_red*100-count_led2)/1000;
-				led_buffer[3]=(count_red*100-count_led2)%1000;
-			}
-
-			if(count_led2 % 100 == 0){
-				led_buffer[2] = (COUNT_YELLOW - count_led2)/1000;
-				led_buffer[3] = (COUNT_YELLOW - count_led2)%1000;
-			}
-
-			if(count_led2 == COUNT_YELLOW)
-				count_led2 = 0;
-
 			HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, SET);
 			HAL_GPIO_WritePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin, RESET);
 			HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, SET);
@@ -143,14 +120,19 @@ void fsm_automatic_run(void){
 			HAL_GPIO_WritePin(LED_YELLOW1_GPIO_Port, LED_YELLOW1_Pin, SET);
 			HAL_GPIO_WritePin(LED_GREEN1_GPIO_Port, LED_GREEN1_Pin, SET);
 
-			if(count_led2 == count_red){
-				count_led2 = 0;
+			if(mode == 1){
+				led_buffer[0] = (counter[0])/1000;
+				led_buffer[1] = ((counter[0])/100)%10;
+
+				led_buffer[2] = (counter[0])/1000;
+				led_buffer[3] = ((counter[0])/100)%10;
 			}
 
 			if(flag[0] == 1){
 				status = AUTO_RED_GREEN;
-				setTimer(0, (count_red*100)-COUNT_YELLOW);
+				setTimer(0, count_green*100);
 			}
+
 			break;
 		default:
 

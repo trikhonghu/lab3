@@ -25,7 +25,7 @@ Core/Src/fsm_automatic.o: ../Core/Src/fsm_automatic.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Core/Inc/input_reading.h ../Core/Inc/softwareTimer.h \
- ../Core/Inc/global.h
+ ../Core/Inc/global.h ../Core/Inc/softwareTimer.h
 
 ../Core/Inc/fsm_automatic.h:
 
@@ -86,3 +86,5 @@ Core/Src/fsm_automatic.o: ../Core/Src/fsm_automatic.c \
 ../Core/Inc/softwareTimer.h:
 
 ../Core/Inc/global.h:
+
+../Core/Inc/softwareTimer.h:
