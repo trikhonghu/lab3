@@ -16,18 +16,17 @@
   *
   ******************************************************************************
   */
-#include "global.h"
-#include "time.h"
-#include "input_processing.h"
-#include "fsm_automatic.h"
-#include "led_7_seg.h"
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "global.h"
+#include "time.h"
+#include "fsm_automatic.h"
+#include "led_7_seg.h"
+#include "button.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -107,9 +106,6 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	fsm_for_input_processing();
-	//count_led1++;
-	//count_led2++;
 	fsm_automatic_run();
 	//display7segLed(led7_seg_buffer[led_buffer[2]]);
 	scan_led();
@@ -217,7 +213,8 @@ static void MX_GPIO_Init(void)
                           |a_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, SW1_Pin|SW2_Pin|SW3_Pin|SW4_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, SW1_Pin|SW2_Pin|SW3_Pin|SW4_Pin
+                          |LED_TEST_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : b_Pin LED_RED1_Pin LED_YELLOW1_Pin LED_GREEN1_Pin
                            LED_RED_Pin LED_YELLOW_Pin LED_GREEN_Pin d_Pin
@@ -238,8 +235,10 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : SW1_Pin SW2_Pin SW3_Pin SW4_Pin */
-  GPIO_InitStruct.Pin = SW1_Pin|SW2_Pin|SW3_Pin|SW4_Pin;
+  /*Configure GPIO pins : SW1_Pin SW2_Pin SW3_Pin SW4_Pin
+                           LED_TEST_Pin */
+  GPIO_InitStruct.Pin = SW1_Pin|SW2_Pin|SW3_Pin|SW4_Pin
+                          |LED_TEST_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -251,6 +250,7 @@ static void MX_GPIO_Init(void)
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 		//button_reading();
 		timerRun();
+		getKeyInput();
 }
 /* USER CODE END 4 */
 

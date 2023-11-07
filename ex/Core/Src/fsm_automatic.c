@@ -20,7 +20,6 @@
 
 
 void fsm_automatic_run(void){
-	//flag[2]:ledTraffic1, flag[3]:ledTraffic2
 	switch (status) {
 		case INIT:
 			//TO DO
