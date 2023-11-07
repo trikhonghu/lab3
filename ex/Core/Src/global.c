@@ -10,9 +10,9 @@
 uint8_t mode			= 1;
 uint8_t status 			= INIT;
 uint8_t key_sw 			= 0;
-uint8_t count_red 		= 5;
-uint8_t count_yellow 	= 2;
-uint8_t count_green 	= 3;
+uint8_t count_red 		= 20;
+uint8_t count_yellow 	= 4;
+uint8_t count_green 	= 16;
 uint8_t count_led1 		=0;
 uint8_t count_led2 		=0;
 
