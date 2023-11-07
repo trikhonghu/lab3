@@ -8,7 +8,7 @@
 #include "softwareTimer.h"
 #include "global.h"
 
-int counter[4] = {0}; //0:fsm_traffic_1, 1:scan_led, 2:fsm_traffic_2, 3:
+int counter[4] = {0}; //0:fsm_traffic_1, 1:scan_led, 2:fsm_traffic_2, 3:Toggle 2Hz
 int flag[4] = {0};
 
 void setTimer(int index ,int duration){

@@ -113,6 +113,15 @@ int main(void)
 	scan_led();
 	fsm_mode();
 	if(isButtonPressed(0)){
+		setTimer(3, 100);
+		HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, SET);
+		HAL_GPIO_WritePin(LED_RED1_GPIO_Port, LED_RED_Pin, SET);
+
+		HAL_GPIO_WritePin(LED_YELLOW_GPIO_Port, LED_YELLOW_Pin, SET);
+		HAL_GPIO_WritePin(LED_YELLOW1_GPIO_Port, LED_YELLOW1_Pin, SET);
+
+		HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, SET);
+		HAL_GPIO_WritePin(LED_RED1_GPIO_Port, LED_RED_Pin, SET);
 		if (mode < 4)
 			mode++;
 		else

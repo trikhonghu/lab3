@@ -18,7 +18,7 @@ uint8_t count_green 	= 3;
 uint8_t count_led1 		=0;
 uint8_t count_led2 		=0;
 
-uint8_t temp 			=0; //use to set value in mode 2, 3, 4
+uint8_t temp[3] 		={0}; //use to set value in mode 2, 3, 4
 
 const uint8_t led7_seg_buffer[10] = {
     0b11000000, // 0

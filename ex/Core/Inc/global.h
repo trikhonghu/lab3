@@ -33,5 +33,5 @@ extern uint8_t 			led_buffer[4];
 extern uint8_t 			count_led1;
 extern uint8_t 			count_led2;
 
-extern uint8_t			temp;
+extern uint8_t			temp[3];
 #endif /* INC_GLOBAL_H_ */
