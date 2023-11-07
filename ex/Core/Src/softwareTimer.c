@@ -8,18 +8,18 @@
 #include "softwareTimer.h"
 #include "global.h"
 
-int counter[4] = {0};
+int counter[4] = {0}; //0:fsm_traffic_1, 1:scan_led, 2:fsm_traffic_2, 3:
 int flag[4] = {0};
 
 void setTimer(int index ,int duration){
-	if(index < 2){
+	if(index < 4){
 		counter[index] = duration;
 		flag[index] = 0;
 	}
 }
 
 void timerRun(void){
-	for(int i =0; i<3; i++){
+	for(int i =0; i<4; i++){
 		if(counter[i] > 0){
 			counter[i]--;
 			if(counter[i] <= 0){

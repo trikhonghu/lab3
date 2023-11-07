@@ -98,8 +98,8 @@ void Error_Handler(void);
 #define SW3_GPIO_Port GPIOB
 #define SW4_Pin GPIO_PIN_6
 #define SW4_GPIO_Port GPIOB
-#define LED_TEST_Pin GPIO_PIN_7
-#define LED_TEST_GPIO_Port GPIOB
+#define TEST_Pin GPIO_PIN_7
+#define TEST_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

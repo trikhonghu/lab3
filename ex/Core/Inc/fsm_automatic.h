@@ -11,6 +11,7 @@
 #include "global.h"
 #include "softwareTimer.h"
 
-void fsm_automatic_run(void);
+void fsm_automatic_run1(void);
+void fsm_automatic_run2(void);
 
 #endif /* INC_FSM_AUTOMATIC_H_ */

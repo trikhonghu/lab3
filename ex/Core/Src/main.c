@@ -27,6 +27,7 @@
 #include "fsm_automatic.h"
 #include "led_7_seg.h"
 #include "button.h"
+#include "fsm_mode.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -100,15 +101,24 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 
   //dung PNP switch 7 seg led
-  status = INIT;
+  status[0] = INIT;
+  status[1] = INIT;
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	fsm_automatic_run();
+	//fsm_automatic_run();
 	//display7segLed(led7_seg_buffer[led_buffer[2]]);
 	scan_led();
+	fsm_mode();
+	if(isButtonPressed(0)){
+		if (mode < 4)
+			mode++;
+		else
+			mode = 1;
+		HAL_GPIO_TogglePin(TEST_GPIO_Port, TEST_Pin);
+	}
   }
   /* USER CODE END 3 */
 }
@@ -214,7 +224,7 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, SW1_Pin|SW2_Pin|SW3_Pin|SW4_Pin
-                          |LED_TEST_Pin, GPIO_PIN_RESET);
+                          |TEST_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : b_Pin LED_RED1_Pin LED_YELLOW1_Pin LED_GREEN1_Pin
                            LED_RED_Pin LED_YELLOW_Pin LED_GREEN_Pin d_Pin
@@ -236,9 +246,9 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pins : SW1_Pin SW2_Pin SW3_Pin SW4_Pin
-                           LED_TEST_Pin */
+                           TEST_Pin */
   GPIO_InitStruct.Pin = SW1_Pin|SW2_Pin|SW3_Pin|SW4_Pin
-                          |LED_TEST_Pin;
+                          |TEST_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

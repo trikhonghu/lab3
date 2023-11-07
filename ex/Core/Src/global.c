@@ -8,13 +8,17 @@
 #include "global.h"
 
 uint8_t mode			= 1;
-uint8_t status 			= INIT;
+uint8_t status[2] 		= {INIT};
 uint8_t key_sw 			= 0;
-uint8_t count_red 		= 10;
-uint8_t count_yellow 	= 3;
-uint8_t count_green 	= 7;
+
+uint8_t count_red 		= 5;
+uint8_t count_yellow 	= 2;
+uint8_t count_green 	= 3;
+
 uint8_t count_led1 		=0;
 uint8_t count_led2 		=0;
+
+uint8_t temp 			=0; //use to set value in mode 2, 3, 4
 
 const uint8_t led7_seg_buffer[10] = {
     0b11000000, // 0
@@ -28,4 +32,4 @@ const uint8_t led7_seg_buffer[10] = {
     0b10000000, // 8
     0b10010000  // 9
 };
-uint8_t led_buffer[4] = {3, 4, 5, 6};
+uint8_t led_buffer[4] = {0};
