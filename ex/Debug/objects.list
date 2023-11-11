@@ -2,7 +2,6 @@
 "./Core/Src/fsm_automatic.o"
 "./Core/Src/fsm_mode.o"
 "./Core/Src/global.o"
-"./Core/Src/input_processing.o"
 "./Core/Src/led_7_seg.o"
 "./Core/Src/main.o"
 "./Core/Src/softwareTimer.o"

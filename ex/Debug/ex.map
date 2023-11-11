@@ -316,113 +316,6 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x69 ./Core/Src/global.o
  .debug_macro   0x0000000000000000       0xf4 ./Core/Src/global.o
  .debug_macro   0x0000000000000000       0x1c ./Core/Src/global.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
- .text          0x0000000000000000        0x0 ./Core/Src/input_processing.o
- .data          0x0000000000000000        0x0 ./Core/Src/input_processing.o
- .bss           0x0000000000000000        0x0 ./Core/Src/input_processing.o
- .bss.buttonBuffer
-                0x0000000000000000        0x1 ./Core/Src/input_processing.o
- .bss.debounceButtonBuffer1
-                0x0000000000000000        0x1 ./Core/Src/input_processing.o
- .bss.debounceButtonBuffer2
-                0x0000000000000000        0x1 ./Core/Src/input_processing.o
- .bss.flagForButtonPress1s
-                0x0000000000000000        0x1 ./Core/Src/input_processing.o
- .bss.counterForButtonPress1s
-                0x0000000000000000        0x2 ./Core/Src/input_processing.o
- .text.button_reading
-                0x0000000000000000       0xbc ./Core/Src/input_processing.o
- .text.is_button_pressed
-                0x0000000000000000       0x34 ./Core/Src/input_processing.o
- .text.is_button_pressed_1s
-                0x0000000000000000       0x34 ./Core/Src/input_processing.o
- .bss.buttonState
-                0x0000000000000000        0x1 ./Core/Src/input_processing.o
- .text.fsm_for_input_processing
-                0x0000000000000000       0x80 ./Core/Src/input_processing.o
- .debug_info    0x0000000000000000      0x395 ./Core/Src/input_processing.o
- .debug_abbrev  0x0000000000000000      0x196 ./Core/Src/input_processing.o
- .debug_aranges
-                0x0000000000000000       0x38 ./Core/Src/input_processing.o
- .debug_ranges  0x0000000000000000       0x28 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000      0x1d2 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000      0xa9c ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000      0x215 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000       0x2e ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000       0x22 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000       0x22 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000       0x8e ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000       0x51 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000      0x103 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000       0x6a ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000      0x1df ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000       0x1c ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000       0x22 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000       0xc3 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000      0xd23 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000     0xde75 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000       0x6d ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000     0x348d ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000      0x174 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000       0x5c ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000      0x5bc ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000      0x1b7 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000      0x1cb ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000      0x114 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000      0x1b2 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000       0x27 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000      0x12f ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000      0x1bc ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000       0x34 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000       0x3c ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000       0x57 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000       0x87 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000      0x183 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000      0x140 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000      0x8ed ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000       0x69 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000       0xf4 ./Core/Src/input_processing.o
- .debug_line    0x0000000000000000      0x78d ./Core/Src/input_processing.o
- .debug_str     0x0000000000000000    0x7fbc0 ./Core/Src/input_processing.o
- .comment       0x0000000000000000       0x54 ./Core/Src/input_processing.o
- .debug_frame   0x0000000000000000       0xa4 ./Core/Src/input_processing.o
- .ARM.attributes
-                0x0000000000000000       0x2d ./Core/Src/input_processing.o
  .group         0x0000000000000000        0xc ./Core/Src/led_7_seg.o
  .group         0x0000000000000000        0xc ./Core/Src/led_7_seg.o
  .group         0x0000000000000000        0xc ./Core/Src/led_7_seg.o
@@ -2760,7 +2653,6 @@ LOAD ./Core/Src/button.o
 LOAD ./Core/Src/fsm_automatic.o
 LOAD ./Core/Src/fsm_mode.o
 LOAD ./Core/Src/global.o
-LOAD ./Core/Src/input_processing.o
 LOAD ./Core/Src/led_7_seg.o
 LOAD ./Core/Src/main.o
 LOAD ./Core/Src/softwareTimer.o
