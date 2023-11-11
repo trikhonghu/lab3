@@ -17,6 +17,10 @@
 #define AUTO_YELLOW	3
 #define AUTO_GREEN	4
 
+extern uint32_t			prescaller;
+extern uint32_t			counter_;
+
+extern uint32_t			count_inter;
 
 extern uint8_t			mode;
 

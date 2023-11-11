@@ -103,6 +103,8 @@ int main(void)
   //dung PNP switch 7 seg led
   status[0] = INIT;
   status[1] = INIT;
+
+  count_inter = (8000000/(prescaller+1))/(counter_+1);
   while (1)
   {
     /* USER CODE END WHILE */
@@ -126,7 +128,7 @@ int main(void)
 			mode++;
 		else
 			mode = 1;
-		HAL_GPIO_TogglePin(TEST_GPIO_Port, TEST_Pin);
+		//HAL_GPIO_TogglePin(TEST_GPIO_Port, TEST_Pin);
 	}
   }
   /* USER CODE END 3 */
@@ -207,7 +209,8 @@ static void MX_TIM2_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN TIM2_Init 2 */
-
+  prescaller = htim2.Init.Prescaler;
+  counter_ = htim2.Init.Period;
   /* USER CODE END TIM2_Init 2 */
 
 }
