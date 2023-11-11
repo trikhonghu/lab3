@@ -153,7 +153,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x140 ./Core/Src/fsm_automatic.o
  .debug_macro   0x0000000000000000      0x8ed ./Core/Src/fsm_automatic.o
  .debug_macro   0x0000000000000000       0x69 ./Core/Src/fsm_automatic.o
- .debug_macro   0x0000000000000000      0x100 ./Core/Src/fsm_automatic.o
+ .debug_macro   0x0000000000000000       0xf4 ./Core/Src/fsm_automatic.o
  .debug_macro   0x0000000000000000       0x1c ./Core/Src/fsm_automatic.o
  .group         0x0000000000000000        0xc ./Core/Src/fsm_mode.o
  .group         0x0000000000000000        0xc ./Core/Src/fsm_mode.o
@@ -231,7 +231,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x140 ./Core/Src/fsm_mode.o
  .debug_macro   0x0000000000000000      0x8ed ./Core/Src/fsm_mode.o
  .debug_macro   0x0000000000000000       0x69 ./Core/Src/fsm_mode.o
- .debug_macro   0x0000000000000000      0x100 ./Core/Src/fsm_mode.o
+ .debug_macro   0x0000000000000000       0xf4 ./Core/Src/fsm_mode.o
  .debug_macro   0x0000000000000000       0x1c ./Core/Src/fsm_mode.o
  .group         0x0000000000000000        0xc ./Core/Src/global.o
  .group         0x0000000000000000        0xc ./Core/Src/global.o
@@ -314,7 +314,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x140 ./Core/Src/global.o
  .debug_macro   0x0000000000000000      0x8ed ./Core/Src/global.o
  .debug_macro   0x0000000000000000       0x69 ./Core/Src/global.o
- .debug_macro   0x0000000000000000      0x100 ./Core/Src/global.o
+ .debug_macro   0x0000000000000000       0xf4 ./Core/Src/global.o
  .debug_macro   0x0000000000000000       0x1c ./Core/Src/global.o
  .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
  .group         0x0000000000000000        0xc ./Core/Src/input_processing.o
@@ -416,9 +416,9 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x140 ./Core/Src/input_processing.o
  .debug_macro   0x0000000000000000      0x8ed ./Core/Src/input_processing.o
  .debug_macro   0x0000000000000000       0x69 ./Core/Src/input_processing.o
- .debug_macro   0x0000000000000000      0x100 ./Core/Src/input_processing.o
+ .debug_macro   0x0000000000000000       0xf4 ./Core/Src/input_processing.o
  .debug_line    0x0000000000000000      0x78d ./Core/Src/input_processing.o
- .debug_str     0x0000000000000000    0x7fbe9 ./Core/Src/input_processing.o
+ .debug_str     0x0000000000000000    0x7fbc0 ./Core/Src/input_processing.o
  .comment       0x0000000000000000       0x54 ./Core/Src/input_processing.o
  .debug_frame   0x0000000000000000       0xa4 ./Core/Src/input_processing.o
  .ARM.attributes
@@ -498,7 +498,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x140 ./Core/Src/led_7_seg.o
  .debug_macro   0x0000000000000000      0x8ed ./Core/Src/led_7_seg.o
  .debug_macro   0x0000000000000000       0x69 ./Core/Src/led_7_seg.o
- .debug_macro   0x0000000000000000      0x100 ./Core/Src/led_7_seg.o
+ .debug_macro   0x0000000000000000       0xf4 ./Core/Src/led_7_seg.o
  .debug_macro   0x0000000000000000       0x1c ./Core/Src/led_7_seg.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
  .group         0x0000000000000000        0xc ./Core/Src/main.o
@@ -603,7 +603,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x140 ./Core/Src/main.o
  .debug_macro   0x0000000000000000      0x8ed ./Core/Src/main.o
  .debug_macro   0x0000000000000000       0x69 ./Core/Src/main.o
- .debug_macro   0x0000000000000000      0x100 ./Core/Src/main.o
+ .debug_macro   0x0000000000000000       0xf4 ./Core/Src/main.o
  .debug_macro   0x0000000000000000       0x1c ./Core/Src/main.o
  .debug_macro   0x0000000000000000       0x16 ./Core/Src/main.o
  .group         0x0000000000000000        0xc ./Core/Src/softwareTimer.o
@@ -681,7 +681,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x140 ./Core/Src/softwareTimer.o
  .debug_macro   0x0000000000000000      0x8ed ./Core/Src/softwareTimer.o
  .debug_macro   0x0000000000000000       0x69 ./Core/Src/softwareTimer.o
- .debug_macro   0x0000000000000000      0x100 ./Core/Src/softwareTimer.o
+ .debug_macro   0x0000000000000000       0xf4 ./Core/Src/softwareTimer.o
  .debug_macro   0x0000000000000000       0x1c ./Core/Src/softwareTimer.o
  .group         0x0000000000000000        0xc ./Core/Src/stm32f1xx_hal_msp.o
  .group         0x0000000000000000        0xc ./Core/Src/stm32f1xx_hal_msp.o
@@ -759,7 +759,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x140 ./Core/Src/stm32f1xx_hal_msp.o
  .debug_macro   0x0000000000000000      0x8ed ./Core/Src/stm32f1xx_hal_msp.o
  .debug_macro   0x0000000000000000       0x69 ./Core/Src/stm32f1xx_hal_msp.o
- .debug_macro   0x0000000000000000      0x100 ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_macro   0x0000000000000000       0xf4 ./Core/Src/stm32f1xx_hal_msp.o
  .group         0x0000000000000000        0xc ./Core/Src/stm32f1xx_it.o
  .group         0x0000000000000000        0xc ./Core/Src/stm32f1xx_it.o
  .group         0x0000000000000000        0xc ./Core/Src/stm32f1xx_it.o
@@ -834,7 +834,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x140 ./Core/Src/stm32f1xx_it.o
  .debug_macro   0x0000000000000000      0x8ed ./Core/Src/stm32f1xx_it.o
  .debug_macro   0x0000000000000000       0x69 ./Core/Src/stm32f1xx_it.o
- .debug_macro   0x0000000000000000      0x100 ./Core/Src/stm32f1xx_it.o
+ .debug_macro   0x0000000000000000       0xf4 ./Core/Src/stm32f1xx_it.o
  .group         0x0000000000000000        0xc ./Core/Src/syscalls.o
  .group         0x0000000000000000        0xc ./Core/Src/syscalls.o
  .group         0x0000000000000000        0xc ./Core/Src/syscalls.o
@@ -3430,7 +3430,7 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_ranges  0x00000000000003e8      0x3c0 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
  .debug_ranges  0x00000000000007a8      0x158 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
 
-.debug_macro    0x0000000000000000    0x17953
+.debug_macro    0x0000000000000000    0x17947
  .debug_macro   0x0000000000000000      0x1d8 ./Core/Src/button.o
  .debug_macro   0x00000000000001d8      0xa9c ./Core/Src/button.o
  .debug_macro   0x0000000000000c74      0x215 ./Core/Src/button.o
@@ -3467,52 +3467,52 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_macro   0x0000000000014870      0x140 ./Core/Src/button.o
  .debug_macro   0x00000000000149b0      0x8ed ./Core/Src/button.o
  .debug_macro   0x000000000001529d       0x69 ./Core/Src/button.o
- .debug_macro   0x0000000000015306      0x100 ./Core/Src/button.o
- .debug_macro   0x0000000000015406       0x1c ./Core/Src/button.o
- .debug_macro   0x0000000000015422       0x10 ./Core/Src/button.o
- .debug_macro   0x0000000000015432      0x1db ./Core/Src/fsm_automatic.o
- .debug_macro   0x000000000001560d      0x1e6 ./Core/Src/fsm_mode.o
- .debug_macro   0x00000000000157f3       0x16 ./Core/Src/fsm_mode.o
- .debug_macro   0x0000000000015809      0x1c9 ./Core/Src/global.o
- .debug_macro   0x00000000000159d2      0x1d7 ./Core/Src/led_7_seg.o
- .debug_macro   0x0000000000015ba9      0x353 ./Core/Src/main.o
- .debug_macro   0x0000000000015efc       0x52 ./Core/Src/main.o
- .debug_macro   0x0000000000015f4e       0x18 ./Core/Src/main.o
- .debug_macro   0x0000000000015f66       0x3c ./Core/Src/main.o
- .debug_macro   0x0000000000015fa2       0x34 ./Core/Src/main.o
- .debug_macro   0x0000000000015fd6      0x333 ./Core/Src/main.o
- .debug_macro   0x0000000000016309       0x16 ./Core/Src/main.o
- .debug_macro   0x000000000001631f       0x43 ./Core/Src/main.o
- .debug_macro   0x0000000000016362       0x34 ./Core/Src/main.o
- .debug_macro   0x0000000000016396       0x10 ./Core/Src/main.o
- .debug_macro   0x00000000000163a6       0x58 ./Core/Src/main.o
- .debug_macro   0x00000000000163fe       0x71 ./Core/Src/main.o
- .debug_macro   0x000000000001646f       0x1c ./Core/Src/main.o
- .debug_macro   0x000000000001648b      0x12a ./Core/Src/main.o
- .debug_macro   0x00000000000165b5       0x10 ./Core/Src/main.o
- .debug_macro   0x00000000000165c5       0x35 ./Core/Src/main.o
- .debug_macro   0x00000000000165fa       0x10 ./Core/Src/main.o
- .debug_macro   0x000000000001660a       0x10 ./Core/Src/main.o
- .debug_macro   0x000000000001661a       0x10 ./Core/Src/main.o
- .debug_macro   0x000000000001662a       0x1c ./Core/Src/main.o
- .debug_macro   0x0000000000016646       0x52 ./Core/Src/main.o
- .debug_macro   0x0000000000016698       0x22 ./Core/Src/main.o
- .debug_macro   0x00000000000166ba       0x10 ./Core/Src/main.o
- .debug_macro   0x00000000000166ca       0x40 ./Core/Src/main.o
- .debug_macro   0x000000000001670a       0xd5 ./Core/Src/main.o
- .debug_macro   0x00000000000167df       0x1c ./Core/Src/main.o
- .debug_macro   0x00000000000167fb       0x3d ./Core/Src/main.o
- .debug_macro   0x0000000000016838       0x35 ./Core/Src/main.o
- .debug_macro   0x000000000001686d      0x1cd ./Core/Src/softwareTimer.o
- .debug_macro   0x0000000000016a3a      0x1a6 ./Core/Src/stm32f1xx_hal_msp.o
- .debug_macro   0x0000000000016be0      0x1b0 ./Core/Src/stm32f1xx_it.o
- .debug_macro   0x0000000000016d90      0x197 ./Core/Src/system_stm32f1xx.o
- .debug_macro   0x0000000000016f27      0x1bb ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
- .debug_macro   0x00000000000170e2      0x197 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
- .debug_macro   0x0000000000017279      0x202 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
- .debug_macro   0x000000000001747b      0x1a9 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
- .debug_macro   0x0000000000017624      0x198 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
- .debug_macro   0x00000000000177bc      0x197 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
+ .debug_macro   0x0000000000015306       0xf4 ./Core/Src/button.o
+ .debug_macro   0x00000000000153fa       0x1c ./Core/Src/button.o
+ .debug_macro   0x0000000000015416       0x10 ./Core/Src/button.o
+ .debug_macro   0x0000000000015426      0x1db ./Core/Src/fsm_automatic.o
+ .debug_macro   0x0000000000015601      0x1e6 ./Core/Src/fsm_mode.o
+ .debug_macro   0x00000000000157e7       0x16 ./Core/Src/fsm_mode.o
+ .debug_macro   0x00000000000157fd      0x1c9 ./Core/Src/global.o
+ .debug_macro   0x00000000000159c6      0x1d7 ./Core/Src/led_7_seg.o
+ .debug_macro   0x0000000000015b9d      0x353 ./Core/Src/main.o
+ .debug_macro   0x0000000000015ef0       0x52 ./Core/Src/main.o
+ .debug_macro   0x0000000000015f42       0x18 ./Core/Src/main.o
+ .debug_macro   0x0000000000015f5a       0x3c ./Core/Src/main.o
+ .debug_macro   0x0000000000015f96       0x34 ./Core/Src/main.o
+ .debug_macro   0x0000000000015fca      0x333 ./Core/Src/main.o
+ .debug_macro   0x00000000000162fd       0x16 ./Core/Src/main.o
+ .debug_macro   0x0000000000016313       0x43 ./Core/Src/main.o
+ .debug_macro   0x0000000000016356       0x34 ./Core/Src/main.o
+ .debug_macro   0x000000000001638a       0x10 ./Core/Src/main.o
+ .debug_macro   0x000000000001639a       0x58 ./Core/Src/main.o
+ .debug_macro   0x00000000000163f2       0x71 ./Core/Src/main.o
+ .debug_macro   0x0000000000016463       0x1c ./Core/Src/main.o
+ .debug_macro   0x000000000001647f      0x12a ./Core/Src/main.o
+ .debug_macro   0x00000000000165a9       0x10 ./Core/Src/main.o
+ .debug_macro   0x00000000000165b9       0x35 ./Core/Src/main.o
+ .debug_macro   0x00000000000165ee       0x10 ./Core/Src/main.o
+ .debug_macro   0x00000000000165fe       0x10 ./Core/Src/main.o
+ .debug_macro   0x000000000001660e       0x10 ./Core/Src/main.o
+ .debug_macro   0x000000000001661e       0x1c ./Core/Src/main.o
+ .debug_macro   0x000000000001663a       0x52 ./Core/Src/main.o
+ .debug_macro   0x000000000001668c       0x22 ./Core/Src/main.o
+ .debug_macro   0x00000000000166ae       0x10 ./Core/Src/main.o
+ .debug_macro   0x00000000000166be       0x40 ./Core/Src/main.o
+ .debug_macro   0x00000000000166fe       0xd5 ./Core/Src/main.o
+ .debug_macro   0x00000000000167d3       0x1c ./Core/Src/main.o
+ .debug_macro   0x00000000000167ef       0x3d ./Core/Src/main.o
+ .debug_macro   0x000000000001682c       0x35 ./Core/Src/main.o
+ .debug_macro   0x0000000000016861      0x1cd ./Core/Src/softwareTimer.o
+ .debug_macro   0x0000000000016a2e      0x1a6 ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_macro   0x0000000000016bd4      0x1b0 ./Core/Src/stm32f1xx_it.o
+ .debug_macro   0x0000000000016d84      0x197 ./Core/Src/system_stm32f1xx.o
+ .debug_macro   0x0000000000016f1b      0x1bb ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .debug_macro   0x00000000000170d6      0x197 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+ .debug_macro   0x000000000001726d      0x202 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+ .debug_macro   0x000000000001746f      0x1a9 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+ .debug_macro   0x0000000000017618      0x198 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
+ .debug_macro   0x00000000000177b0      0x197 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
 
 .debug_line     0x0000000000000000     0xc17b
  .debug_line    0x0000000000000000      0x740 ./Core/Src/button.o
@@ -3533,40 +3533,40 @@ LOAD c:/st/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_line    0x00000000000075ff     0x3346 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
  .debug_line    0x000000000000a945     0x1836 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
 
-.debug_str      0x0000000000000000    0x85dc5
- .debug_str     0x0000000000000000    0x7f860 ./Core/Src/button.o
-                                      0x7fbdc (size before relaxing)
- .debug_str     0x000000000007f860       0x58 ./Core/Src/fsm_automatic.o
-                                      0x7fb4a (size before relaxing)
- .debug_str     0x000000000007f8b8       0x31 ./Core/Src/fsm_mode.o
-                                      0x7fb97 (size before relaxing)
- .debug_str     0x000000000007f8e9       0x15 ./Core/Src/global.o
-                                      0x7fad6 (size before relaxing)
- .debug_str     0x000000000007f8fe       0x42 ./Core/Src/led_7_seg.o
-                                      0x7fb34 (size before relaxing)
- .debug_str     0x000000000007f940     0x4211 ./Core/Src/main.o
-                                      0x83eea (size before relaxing)
- .debug_str     0x0000000000083b51       0x37 ./Core/Src/softwareTimer.o
-                                      0x7fafe (size before relaxing)
- .debug_str     0x0000000000083b88      0x2ba ./Core/Src/stm32f1xx_hal_msp.o
-                                      0x801e5 (size before relaxing)
- .debug_str     0x0000000000083e42       0xcd ./Core/Src/stm32f1xx_it.o
-                                      0x7ff47 (size before relaxing)
- .debug_str     0x0000000000083f0f       0x52 ./Core/Src/system_stm32f1xx.o
+.debug_str      0x0000000000000000    0x85d9c
+ .debug_str     0x0000000000000000    0x7f837 ./Core/Src/button.o
+                                      0x7fbb3 (size before relaxing)
+ .debug_str     0x000000000007f837       0x58 ./Core/Src/fsm_automatic.o
+                                      0x7fb21 (size before relaxing)
+ .debug_str     0x000000000007f88f       0x31 ./Core/Src/fsm_mode.o
+                                      0x7fb6e (size before relaxing)
+ .debug_str     0x000000000007f8c0       0x15 ./Core/Src/global.o
+                                      0x7faad (size before relaxing)
+ .debug_str     0x000000000007f8d5       0x42 ./Core/Src/led_7_seg.o
+                                      0x7fb0b (size before relaxing)
+ .debug_str     0x000000000007f917     0x4211 ./Core/Src/main.o
+                                      0x83ec1 (size before relaxing)
+ .debug_str     0x0000000000083b28       0x37 ./Core/Src/softwareTimer.o
+                                      0x7fad5 (size before relaxing)
+ .debug_str     0x0000000000083b5f      0x2ba ./Core/Src/stm32f1xx_hal_msp.o
+                                      0x801bc (size before relaxing)
+ .debug_str     0x0000000000083e19       0xcd ./Core/Src/stm32f1xx_it.o
+                                      0x7ff1e (size before relaxing)
+ .debug_str     0x0000000000083ee6       0x52 ./Core/Src/system_stm32f1xx.o
                                       0x7f6c8 (size before relaxing)
- .debug_str     0x0000000000083f61       0x36 ./Core/Startup/startup_stm32f103c6ux.o
+ .debug_str     0x0000000000083f38       0x36 ./Core/Startup/startup_stm32f103c6ux.o
                                          0x57 (size before relaxing)
- .debug_str     0x0000000000083f97      0x304 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .debug_str     0x0000000000083f6e      0x304 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
                                       0x7fd1f (size before relaxing)
- .debug_str     0x000000000008429b      0x300 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+ .debug_str     0x0000000000084272      0x300 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
                                       0x7fd27 (size before relaxing)
- .debug_str     0x000000000008459b      0x31f ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+ .debug_str     0x0000000000084572      0x31f ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
                                       0x7fa8c (size before relaxing)
- .debug_str     0x00000000000848ba      0x24f ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+ .debug_str     0x0000000000084891      0x24f ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
                                       0x7fac5 (size before relaxing)
- .debug_str     0x0000000000084b09      0xdce ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
+ .debug_str     0x0000000000084ae0      0xdce ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
                                       0x80a9e (size before relaxing)
- .debug_str     0x00000000000858d7      0x4ee ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
+ .debug_str     0x00000000000858ae      0x4ee ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
                                       0x8024f (size before relaxing)
 
 .comment        0x0000000000000000       0x53
