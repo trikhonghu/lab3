@@ -115,7 +115,7 @@ int main(void)
 	scan_led();
 	fsm_mode();
 	if(isButtonPressed(0)){
-		setTimer(3, 100);
+		setTimer(3, count_inter);
 		HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, SET);
 		HAL_GPIO_WritePin(LED_RED1_GPIO_Port, LED_RED_Pin, SET);
 
@@ -128,7 +128,6 @@ int main(void)
 			mode++;
 		else
 			mode = 1;
-		//HAL_GPIO_TogglePin(TEST_GPIO_Port, TEST_Pin);
 	}
   }
   /* USER CODE END 3 */

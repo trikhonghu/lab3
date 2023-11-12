@@ -18,8 +18,8 @@
 
 
 void fsm_automatic_run1(void){
-	led_buffer[0] = counter[0]/1000;
-	led_buffer[1] = (counter[0]/100)%10;
+	led_buffer[0] = (counter[0]/count_inter)/10;
+	led_buffer[1] = (counter[0]/count_inter)%10;
 
 	switch (status[0]) {
 		case INIT:
